@@ -1,16 +1,58 @@
 import { SlEnvolope } from "react-icons/sl";
 import Lottie from "lottie-react";
-import doneAnimation from "../public/animation/done-animation.json";
-import envelopeAnimation from "../public/animation/animatedEnvelope.json";
-import { useState } from "react";
+import doneAnimation from "../../public/animation/done-animation.json";
+import envelopeAnimation from "../../public/animation/animatedEnvelope.json";
+import React, { useState, useRef, useEffect } from "react";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+
+const schema = z.object({
+  email: z.string().email({ message: "Enter valid Email address" }),
+  name: z.string().min(3, { message: "Name must be at least 3 characters" }),
+  message: z
+    .string()
+    .min(10, { message: "Message length must be at least 10 characters" }),
+});
+
 const Contact = () => {
   const [isSubmitted, setSubmitted] = useState(false);
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isValid },
+  } = useForm({ resolver: zodResolver(schema) });
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_6ju217h",
+        "template_k86b5xg",
+        form.current,
+        "jMHt5msMMzPaqPJfK"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  const onSubmit = (data, e) => {
     e.preventDefault();
     setSubmitted(true);
+    sendEmail();
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3000);
   };
   return (
-    <section className="py-16 dark:bg-[#333] dark:text-white">
+    <section className="py-16 dark:bg-[#333] dark:text-white" id="contact">
       <div className="container">
         <header className="mb-8">
           <h2 className="flex items-center gap-4 text-3xl font-bold">
@@ -21,9 +63,29 @@ const Contact = () => {
         </header>
         <form
           className="grid items-center md:grid-cols-2"
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit(onSubmit)}
+          ref={form}
         >
           <div className="inputs-wrapper flow-content--m">
+            <div className="input-wrapper">
+              <label
+                htmlFor="name"
+                className="inline-block mb-2 dark:text-subtitle"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="w-full px-2 py-1 placeholder:text-gray-500 dark:bg-[#222]  rounded-md border dark:border-gray-600 outline-none focus:dark:border-cyan-500 duration-300"
+                placeholder="Name"
+                {...register("name", { required: true })}
+              />
+              {errors.name && (
+                <p className="text-md text-red-500">{errors.name?.message}</p>
+              )}
+            </div>
             <div className="input-wrapper">
               <label
                 htmlFor="email"
@@ -34,9 +96,14 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="w-full px-2 py-1 placeholder:text-gray-500 dark:bg-[#222]  rounded-md border dark:border-gray-600 outline-none focus:dark:border-cyan-500 duration-300"
                 placeholder="Email Address"
+                {...register("email", { required: true })}
               />
+              {errors.email && (
+                <p className="text-md text-red-500">{errors.email?.message}</p>
+              )}
             </div>
             <div className="input-wrapper">
               <label
@@ -46,15 +113,25 @@ const Contact = () => {
                 Email Address
               </label>
               <textarea
-                name=""
                 id="message"
+                name="message"
                 placeholder="Message "
-                className="w-full px-2 py-1 placeholder:text-gray-500 -subtitle dark:bg-[#222] rounded-md border dark:border-gray-600 min-h-[200px] max-h-[300px] resize-y outline-none focus:dark:border-cyan-500 duration-300"
+                className="w-full px-2 py-1 placeholder:text-gray-500 -subtitle dark:bg-[#222] rounded-md border dark:border-gray-600 min-h-[250px] max-h-[300px] resize-y outline-none focus:dark:border-cyan-500 duration-300"
+                {...register("message", { required: true })}
               ></textarea>
+              {errors.message && (
+                <p className="text-md text-red-500">
+                  {errors.message?.message}
+                </p>
+              )}
             </div>
             <button
               type="submit"
-              className="px-8 py-2 rounded-md dark:bg-[#222] hvr-rectangle-out"
+              className={
+                isValid
+                  ? "px-8 py-2 rounded-md dark:bg-[#222] hover:dark:bg-[#000] duration-300"
+                  : "px-8 py-2 rounded-md bg-gray-600  text-white duration-300 "
+              }
             >
               Submit
             </button>

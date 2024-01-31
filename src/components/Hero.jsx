@@ -2,9 +2,9 @@ import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import avatar from "../assets/avatar.jpg";
 import Lottie from "lottie-react";
-import developerAnimation from "../public/animation/developerAnimation.json";
+import avatar from "../../public/assets/avatar.jpg";
+import developerAnimation from "../../public/animation/developerAnimation.json";
 import { motion } from "framer-motion";
 
 const Hero = () => {
