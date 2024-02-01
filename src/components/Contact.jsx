@@ -19,7 +19,6 @@ const schema = z.object({
 const Contact = () => {
   const [isSubmitted, setSubmitted] = useState(false);
   const form = useRef();
-
   const {
     register,
     handleSubmit,
@@ -54,7 +53,7 @@ const Contact = () => {
   return (
     <section className="py-16 dark:bg-[#333] dark:text-white" id="contact">
       <div className="container">
-        <header className="mb-8" data-aos="fade-down" data-aos-delay="200">
+        <header className="mb-6" data-aos="zoom-out" data-aos-delay="200">
           <h2 className="flex items-center gap-4 text-3xl font-bold">
             <SlEnvolope size={35} className="dark:text-subtitle" />
             Contact Us
@@ -65,11 +64,7 @@ const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           ref={form}
         >
-          <div
-            className="inputs-wrapper flow-content--m"
-            data-aos="fade-right"
-            data-aos-delay="400"
-          >
+          <div className="inputs-wrapper flow-content--m">
             <div className="input-wrapper">
               <label
                 htmlFor="name"
@@ -139,7 +134,7 @@ const Contact = () => {
               Submit
             </button>
             {isSubmitted ? (
-              <p className="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <span className="text-green-500 duration-300 text-md opacity-1">
                   Your message was sent successfully
                 </span>
@@ -148,9 +143,9 @@ const Contact = () => {
                   loop={false}
                   className="text-[25px]"
                 />
-              </p>
+              </div>
             ) : (
-              <p className="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <span className="text-green-500 duration-300 opacity-0 text-md">
                   Your message was sent successfully
                 </span>
@@ -158,14 +153,10 @@ const Contact = () => {
                   animationData={doneAnimation}
                   className="text-[25px] opacity-0"
                 />
-              </p>
+              </div>
             )}
           </div>
-          <div
-            className="img-wrapper order-[-1] md:order-[0]"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
+          <div className="img-wrapper order-[-1] md:order-[0]">
             <Lottie animationData={envelopeAnimation} className="w-full" />
           </div>
         </form>
