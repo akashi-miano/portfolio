@@ -46,16 +46,16 @@ const Nav = () => {
             <ul
               className={
                 nav
-                  ? "fixed top-0 inset-0 bg-black text-white flex  justify-center items-center flex-col z-[999] gap-4 duration-300"
-                  : "fixed top-0 inset-0 bg-black text-white flex  justify-center items-center flex-col z-[999] gap-4 duration-300 translate-x-[-100%]"
+                  ? "fixed top-0 inset-0 bg-[#fdf2e9]  flex  justify-center items-center flex-col z-[999] gap-4 duration-300 dark:bg-[#111]"
+                  : "fixed top-0 inset-0 bg-[#fdf2e9]  flex  justify-center items-center flex-col z-[999] gap-4 duration-300 translate-x-[-100%] dark:bg-[#111]"
               }
             >
               <IoClose
-                className="absolute top-5 right-10 text-white"
+                className="absolute top-5 right-10 dark:text-white"
                 size={40}
                 onClick={() => setNav(!nav)}
               />
-              <li>
+              <li className="item" data-text="About">
                 <a
                   href="#"
                   className="!text-6xl"
@@ -66,7 +66,7 @@ const Nav = () => {
                   About
                 </a>
               </li>
-              <li>
+              <li className="item" data-text="Projects">
                 <a
                   href="#projects"
                   className="!text-6xl"
@@ -77,7 +77,7 @@ const Nav = () => {
                   Projects
                 </a>
               </li>
-              <li>
+              <li className="item" data-text="Contact">
                 <a
                   href="#contact"
                   className="!text-6xl"

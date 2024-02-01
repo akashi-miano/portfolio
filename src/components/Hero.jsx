@@ -42,7 +42,7 @@ const Hero = () => {
                 <a href="https://twitter.com/TrollerHD1" target="_blank">
                   <FaTwitter
                     size={30}
-                    className="duration-300 dark:text-subtitle hover:!text-cyan-500"
+                    className="duration-300 dark:text-subtitle hover:text-cyan-500 dark:hover:text-white"
                   />
                 </a>
               </li>
@@ -50,7 +50,7 @@ const Hero = () => {
                 <a href="https://github.com/akashi-miano" target="_blank">
                   <FaGithub
                     size={30}
-                    className="duration-300 dark:text-subtitle  hover:text-green-600 dark:hover:text-green-500"
+                    className="duration-300 dark:text-subtitle  hover:text-green-600 dark:hover:text-white"
                   />
                 </a>
               </li>
@@ -61,7 +61,7 @@ const Hero = () => {
                 >
                   <SiFrontendmentor
                     size={30}
-                    className="duration-300 dark:text-subtitle  hover:text-blue-700 dark:hover:text-blue-500"
+                    className="duration-300 dark:text-subtitle  hover:text-red-500 dark:hover:text-white"
                   />
                 </a>
               </li>
