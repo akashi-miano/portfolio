@@ -58,7 +58,7 @@ const Nav = () => {
               <li>
                 <a
                   href="#"
-                  className="!text-4xl"
+                  className="!text-6xl"
                   onClick={() => {
                     setNav(!nav);
                   }}
@@ -69,7 +69,7 @@ const Nav = () => {
               <li>
                 <a
                   href="#projects"
-                  className="!text-4xl"
+                  className="!text-6xl"
                   onClick={() => {
                     setNav(!nav);
                   }}
@@ -80,7 +80,7 @@ const Nav = () => {
               <li>
                 <a
                   href="#contact"
-                  className="!text-4xl"
+                  className="!text-6xl"
                   onClick={() => {
                     setNav(!nav);
                   }}
@@ -91,10 +91,10 @@ const Nav = () => {
             </ul>
           </div>
           <button
-            className="flex justify-end dark:text-white"
+            className="flex justify-end dark:text-white rounded-full border border-orange-500 p-4 dark:bg-[#333]"
             onClick={changeTheme}
           >
-            {theme === "light" ? <FaSun size={30} /> : <FaMoon size={30} />}
+            {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
         </div>
       </nav>

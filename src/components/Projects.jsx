@@ -22,11 +22,15 @@ const Projects = () => {
     >
       <div className="container">
         <div className="grid--1x2">
-          <div className="flex flex-col gap-4 filter-items w-fit">
+          <div
+            className="flex flex-col gap-4 filter-items w-fit"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             {filterOptions.map(({ id, category }) => (
               <button
                 key={id}
-                className="px-8 py-2 text-lg rounded-md dark:text-white dark:bg-[#333] dark:hover:bg-[#111] dark:focus:bg-[#111] duration-300 hover:bg-cyan-500 hover:text-white focus:bg-cyan-500"
+                className="px-8 py-2 text-lg rounded-md dark:text-white dark:bg-[#333] dark:hover:bg-[#111] dark:focus:bg-[#111] duration-300 hover:bg-cyan-500 hover:text-white focus:bg-cyan-500 focus:text-white"
                 onClick={() =>
                   category === "All Projects"
                     ? filterType("all")
@@ -46,7 +50,11 @@ const Projects = () => {
             ))}
           </div>
           <div className="cards">
-            <div className="grid gap-8 cards-wrapper card md:grid-cols-3">
+            <div
+              className="grid gap-8 cards-wrapper card md:grid-cols-3"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               {arr.map(({ id, title, text, imgURL, link, repo }) => (
                 <motion.div
                   key={id}
@@ -73,23 +81,14 @@ const Projects = () => {
                       <a href={link} target="_blank">
                         <FaLink
                           size={30}
-                          className="duration-300 cursor-pointer dark:hover:text-cyan-500 hover:text-green-500"
+                          className="duration-300 cursor-pointer hover:text-cyan-500"
                         />
                       </a>
                       <a href={repo} target="_blank">
                         <FaGithub
                           size={30}
-                          className="duration-300 cursor-pointer dark:hover:text-cyan-500 hover:text-green-500"
+                          className="duration-300 cursor-pointer dark:hover:text-cyan-500 hover:text-green-600"
                         />
-                      </a>
-                    </div>
-                    <div className="links-content">
-                      <a
-                        href=""
-                        className="flex items-center gap-4 text-lg dark:text-cyan-500 group hover:text-green-500"
-                      >
-                        More{" "}
-                        <FaArrowRight className="duration-300 group-hover:translate-x-2" />
                       </a>
                     </div>
                   </div>

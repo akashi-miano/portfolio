@@ -54,19 +54,22 @@ const Contact = () => {
   return (
     <section className="py-16 dark:bg-[#333] dark:text-white" id="contact">
       <div className="container">
-        <header className="mb-8">
+        <header className="mb-8" data-aos="fade-down" data-aos-delay="200">
           <h2 className="flex items-center gap-4 text-3xl font-bold">
-            <SlEnvolope size={35} className="text-subtitle" />
+            <SlEnvolope size={35} className="dark:text-subtitle" />
             Contact Us
           </h2>
-          <p></p>
         </header>
         <form
           className="grid items-center md:grid-cols-2"
           onSubmit={handleSubmit(onSubmit)}
           ref={form}
         >
-          <div className="inputs-wrapper flow-content--m">
+          <div
+            className="inputs-wrapper flow-content--m"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <div className="input-wrapper">
               <label
                 htmlFor="name"
@@ -78,7 +81,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-2 py-1 placeholder:text-gray-500 dark:bg-[#222]  rounded-md border dark:border-gray-600 outline-none focus:dark:border-cyan-500 duration-300"
+                className="w-full px-2 py-1 placeholder:text-gray-500 dark:bg-[#222]  rounded-md border dark:border-gray-600 outline-none focus:dark:border-cyan-500 duration-300 border-zinc-700"
                 placeholder="Name"
                 {...register("name", { required: true })}
               />
@@ -97,7 +100,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-2 py-1 placeholder:text-gray-500 dark:bg-[#222]  rounded-md border dark:border-gray-600 outline-none focus:dark:border-cyan-500 duration-300"
+                className="w-full px-2 py-1 placeholder:text-gray-500 dark:bg-[#222]  rounded-md border dark:border-gray-600 outline-none focus:dark:border-cyan-500 duration-300 border-zinc-700"
                 placeholder="Email Address"
                 {...register("email", { required: true })}
               />
@@ -116,7 +119,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 placeholder="Message "
-                className="w-full px-2 py-1 placeholder:text-gray-500 -subtitle dark:bg-[#222] rounded-md border dark:border-gray-600 min-h-[250px] max-h-[300px] resize-y outline-none focus:dark:border-cyan-500 duration-300"
+                className="w-full px-2 py-1 placeholder:text-gray-500 -subtitle dark:bg-[#222] rounded-md border dark:border-gray-600 min-h-[250px] max-h-[300px] resize-y outline-none focus:dark:border-cyan-500 duration-300 border-zinc-700"
                 {...register("message", { required: true })}
               ></textarea>
               {errors.message && (
@@ -129,7 +132,7 @@ const Contact = () => {
               type="submit"
               className={
                 isValid
-                  ? "px-8 py-2 rounded-md dark:bg-[#222] hover:dark:bg-[#000] duration-300"
+                  ? "px-8 py-2 rounded-md bg-[#222] hover:bg-[#000] duration-300 text-white"
                   : "px-8 py-2 rounded-md bg-gray-600  text-white duration-300 "
               }
             >
@@ -158,7 +161,11 @@ const Contact = () => {
               </p>
             )}
           </div>
-          <div className="img-wrapper order-[-1] md:order-[0]">
+          <div
+            className="img-wrapper order-[-1] md:order-[0]"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
             <Lottie animationData={envelopeAnimation} className="w-full" />
           </div>
         </form>

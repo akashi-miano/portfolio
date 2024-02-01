@@ -5,27 +5,30 @@ import { FaLinkedin } from "react-icons/fa";
 import Lottie from "lottie-react";
 import avatar from "../../public/assets/avatar.jpg";
 import developerAnimation from "../../public/animation/developerAnimation.json";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="py-16 dark:bg-[#333] hero duration-300">
       <div className="container">
         <div className="grid md:grid-cols-2">
-          <div className="text-section flow-content--m">
+          <div
+            className="text-section flow-content--m"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img
               src={avatar}
               alt="Avatar"
               className="w-[100px] h-[100px] rounded-full border-4 border-orange-500"
             />
-            <motion.h1
+            <h1
               className="text-4xl dark:text-title"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 2 }}
             >
               Software developer, frounder, and amaeur astronautl
-            </motion.h1>
+            </h1>
             <p className="dark:text-subtitle text-md max-w-[550px]">
               My journey in web development has been marked by a commitment to
               creating seamless and intuitive interfaces that not only meet but
@@ -35,40 +38,36 @@ const Hero = () => {
             </p>
             <ul className="flex items-center gap-4 socials">
               <li>
-                <a href="">
+                <a href="https://twitter.com/TrollerHD1" target="_blank">
                   <FaTwitter
                     size={30}
-                    className="duration-300 dark:text-subtitle dark:hover:text-white"
+                    className="duration-300 dark:text-subtitle hover:!text-cyan-500"
                   />
                 </a>
               </li>
               <li>
-                <a href="">
-                  <FaInstagram
-                    size={30}
-                    className="duration-300 dark:text-subtitle dark:hover:text-white"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="">
+                <a href="https://github.com/akashi-miano" target="_blank">
                   <FaGithub
                     size={30}
-                    className="duration-300 dark:text-subtitle dark:hover:text-white"
+                    className="duration-300 dark:text-subtitle  hover:text-green-600 dark:hover:text-green-500"
                   />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="" target="_blank">
                   <FaLinkedin
                     size={30}
-                    className="duration-300 dark:text-subtitle dark:hover:text-white"
+                    className="duration-300 dark:text-subtitle  hover:text-blue-700 dark:hover:text-blue-500"
                   />
                 </a>
               </li>
             </ul>
           </div>
-          <div className="img-wrapper">
+          <div
+            className="img-wrapper"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <Lottie animationData={developerAnimation} className="w-full" />
           </div>
         </div>
