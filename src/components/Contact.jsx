@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <section className="py-16 dark:bg-[#333] dark:text-white" id="contact">
       <div className="container">
-        <header className="mb-6" data-aos="zoom-out" data-aos-delay="200">
+        <header className="mb-6">
           <h2 className="flex items-center gap-4 text-3xl font-bold">
             <SlEnvolope size={35} className="dark:text-subtitle" />
             Contact Us
