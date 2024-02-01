@@ -2,6 +2,7 @@ import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { SiFrontendmentor } from "react-icons/si";
 import Lottie from "lottie-react";
 import avatar from "../../public/assets/avatar.jpg";
 import developerAnimation from "../../public/animation/developerAnimation.json";
@@ -54,8 +55,11 @@ const Hero = () => {
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
-                  <FaLinkedin
+                <a
+                  href="https://www.frontendmentor.io/profile/akashi-miano"
+                  target="_blank"
+                >
+                  <SiFrontendmentor
                     size={30}
                     className="duration-300 dark:text-subtitle  hover:text-blue-700 dark:hover:text-blue-500"
                   />
