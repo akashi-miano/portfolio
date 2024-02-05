@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import Lottie from "lottie-react";
-import avatar from "../../public/assets/avatar.jpg";
+import avatar from "../../public/assets/image.jpg";
 import developerAnimation from "../../public/animation/developerAnimation.json";
 
 const Hero = () => {
@@ -50,7 +50,7 @@ const Hero = () => {
                 <a href="https://github.com/akashi-miano" target="_blank">
                   <FaGithub
                     size={30}
-                    className="duration-300 dark:text-subtitle  hover:text-green-600 dark:hover:text-white"
+                    className="duration-300 dark:text-subtitle hover:text-green-600 dark:hover:text-white"
                   />
                 </a>
               </li>
@@ -61,7 +61,18 @@ const Hero = () => {
                 >
                   <SiFrontendmentor
                     size={30}
-                    className="duration-300 dark:text-subtitle  hover:text-red-500 dark:hover:text-white"
+                    className="duration-300 dark:text-subtitle hover:text-red-500 dark:hover:text-white"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/abdisalam-hussein-a704b3274/"
+                  target="_blank"
+                >
+                  <FaLinkedin
+                    size={30}
+                    className="duration-300 dark:text-subtitle hover:text-red-500 dark:hover:text-white"
                   />
                 </a>
               </li>
