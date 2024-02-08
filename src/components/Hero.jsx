@@ -72,7 +72,7 @@ const Hero = () => {
                 >
                   <FaLinkedin
                     size={30}
-                    className="duration-300 dark:text-subtitle hover:text-red-500 dark:hover:text-white"
+                    className="duration-300 dark:text-subtitle hover:text-blue-700 dark:hover:text-white"
                   />
                 </a>
               </li>
