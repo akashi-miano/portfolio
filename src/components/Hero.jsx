@@ -28,7 +28,8 @@ const Hero = () => {
               animate={{ scale: 1 }}
               transition={{ duration: 2 }}
             >
-              Software developer, frounder, and amaeur astronautl
+              Front-End Dev | CSS Wizard 🧙‍♂️ | React.js | Next.js | Linux God |
+              2nd Year MMU Student | VIM user BTW | 2nd year student @MMU
             </h1>
             <p className="dark:text-subtitle text-md max-w-[550px]">
               My journey in web development has been marked by a commitment to
