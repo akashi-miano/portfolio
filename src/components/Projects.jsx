@@ -74,7 +74,7 @@ const Projects = () => {
                   </div>
                   <div className="p-6 font-semibold text-wrapper flow-content--m">
                     <h2 className="text-2xl">{title}</h2>
-                    <p className="text-sm text-subtitle">{text}</p>
+                    <p className="text-md text-subtitle">{text}</p>
                   </div>
                   <div className="flex items-center justify-between px-6 pt-2 pb-6 links">
                     <div className="flex items-center gap-4 links-content">
