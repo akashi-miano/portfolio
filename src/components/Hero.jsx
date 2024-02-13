@@ -40,7 +40,11 @@ const Hero = () => {
             </p>
             <ul className="flex items-center gap-4 socials">
               <li>
-                <a href="https://twitter.com/TrollerHD1" target="_blank">
+                <a
+                  href="https://twitter.com/TrollerHD1"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
                   <FaTwitter
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-cyan-500 dark:hover:text-white"
@@ -58,7 +62,11 @@ const Hero = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/akashi-miano" target="_blank">
+                <a
+                  href="https://github.com/akashi-miano"
+                  target="_blank"
+                  aria-label="Github"
+                >
                   <FaGithub
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-green-600 dark:hover:text-white"
@@ -79,6 +87,7 @@ const Hero = () => {
                 <a
                   href="https://www.frontendmentor.io/profile/akashi-miano"
                   target="_blank"
+                  aria-label="Frontned Mentor"
                 >
                   <SiFrontendmentor
                     size={30}
@@ -100,6 +109,7 @@ const Hero = () => {
                 <a
                   href="https://www.linkedin.com/in/abdisalam-hussein-a704b3274/"
                   target="_blank"
+                  aria-label="Linkedin"
                 >
                   <FaLinkedin
                     size={30}

@@ -34,13 +34,19 @@ const Nav = () => {
         <div className="container flex justify-between items-center">
           <ul className="items-center gap-4 hidden md:flex">
             <li>
-              <a href="#">About</a>
+              <a href="#" aria-label="About me">
+                About
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" aria-label="My projects">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" aria-label="Contact me">
+                Contact
+              </a>
             </li>
           </ul>
           <div className="mobile-menu  md:hidden">
@@ -68,6 +74,7 @@ const Nav = () => {
               <li className="item" data-text="About">
                 <a
                   href="#"
+                  aria-label="About me"
                   className="!text-6xl"
                   onClick={() => {
                     setNav(!nav);
@@ -79,6 +86,7 @@ const Nav = () => {
               <li className="item" data-text="Projects">
                 <a
                   href="#projects"
+                  aria-label="My projects"
                   className="!text-6xl"
                   onClick={() => {
                     setNav(!nav);
@@ -90,6 +98,7 @@ const Nav = () => {
               <li className="item" data-text="Contact">
                 <a
                   href="#contact"
+                  aria-label="Contact me"
                   className="!text-6xl"
                   onClick={() => {
                     setNav(!nav);

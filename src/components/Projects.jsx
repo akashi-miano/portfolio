@@ -17,7 +17,7 @@ const Projects = () => {
   };
   return (
     <section
-      className="projects min-h-screen dark:bg-[#222] duration-300 py-16"
+      className="projects min-h-screen dark:bg-[#222] duration-300 py-28"
       id="projects"
     >
       <div className="container">
@@ -78,13 +78,21 @@ const Projects = () => {
                   </div>
                   <div className="flex items-center justify-between px-6 pt-2 pb-6 links">
                     <div className="flex items-center gap-4 links-content">
-                      <a href={link} target="_blank">
+                      <a
+                        href={link}
+                        target="_blank"
+                        aria-label={`Live preview link will take you to ${title}`}
+                      >
                         <FaLink
                           size={30}
                           className="duration-300 cursor-pointer hover:text-cyan-500"
                         />
                       </a>
-                      <a href={repo} target="_blank">
+                      <a
+                        href={repo}
+                        target="_blank"
+                        aria-label={`Live preview link will take you to the github page of ${title}`}
+                      >
                         <FaGithub
                           size={30}
                           className="duration-300 cursor-pointer dark:hover:text-cyan-500 hover:text-green-600"
