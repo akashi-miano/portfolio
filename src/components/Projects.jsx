@@ -74,6 +74,7 @@ const Projects = () => {
                       decoding="async"
                       fetchpriority="high"
                       role="presentation"
+                      srcSet={`${imgURL} 300w`}
                     />
                   </div>
                   <div className="p-6 font-semibold text-wrapper flow-content--m">
