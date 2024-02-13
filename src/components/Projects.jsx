@@ -73,7 +73,6 @@ const Projects = () => {
                       loading="lazy"
                       decoding="async"
                       fetchpriority="high"
-                      role="presentation"
                       srcSet={`${imgURL} 300w`}
                     />
                   </div>
