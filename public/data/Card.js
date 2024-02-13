@@ -1,7 +1,7 @@
 export const card = [
   {
     id: 21,
-    imgURL: "./assets/netflix.png",
+    imgURL: "./assets/netflix.webp",
     title: "Netflix clone",
     text: "Learnt how to use Firebase to setup database and authentication as well as how to create protected routes.",
     category: "react & tailwind",
@@ -10,7 +10,7 @@ export const card = [
   },
   {
     id: 3,
-    imgURL: "./assets/countries-rest-api.png",
+    imgURL: "./assets/countries-rest-api.webp",
     title: "Countries API",
     text: "Learn how to pass parameters to the url with react router dom and how to filter countries by region.",
     category: "react & tailwind",
@@ -19,7 +19,7 @@ export const card = [
   },
   {
     id: 2,
-    imgURL: "./assets/natours.png",
+    imgURL: "./assets/natours.webp",
     title: "NA Tours",
     text: "I built this site using SASS, learn some cool hover effects and and custom form styling",
     category: "SASS",
@@ -28,7 +28,7 @@ export const card = [
   },
   {
     id: 4,
-    imgURL: "./assets/hoobank.png",
+    imgURL: "./assets/hoobank.webp",
     title: "Hoo Bank",
     text: "Learn how to integrate Tailwind with React and how to create incrementing numbers effect.",
     category: "react & tailwind",
@@ -37,7 +37,7 @@ export const card = [
   },
   {
     id: 5,
-    imgURL: "./assets/foodie-zone.png",
+    imgURL: "./assets/foodie-zone.webp",
     title: "Foodie Zone",
     text: "Learnt how to use Swiper.js to create the testimonial section and how to loop through all testimonials.",
     category: "react & tailwind",
@@ -46,7 +46,7 @@ export const card = [
   },
   {
     id: 6,
-    imgURL: "./assets/shortly.png",
+    imgURL: "./assets/shortly.webp",
     title: "Shortly",
     text: "Learnt how to integrate APIs to my application with vanilla JS to shorten links",
     category: "javascript",
@@ -55,7 +55,7 @@ export const card = [
   },
   {
     id: 22,
-    imgURL: "./assets/sunny-side.png",
+    imgURL: "./assets/sunny-side.webp",
     title: "Sunny Side",
     text: "Interesting frontend mentor challenge, didn't learn much out of it. Did it for practice only.",
     category: "react & tailwind",
@@ -64,7 +64,7 @@ export const card = [
   },
   {
     id: 7,
-    imgURL: "./assets/space-explorer.png",
+    imgURL: "./assets/space-explorer.webp",
     title: "Space Explorer",
     text: "Learnt how to implement react router dom to create multiple routes and practiced using th useState() hook to add little bit of interactivity.",
     category: "react & tailwind",
@@ -73,7 +73,7 @@ export const card = [
   },
   {
     id: 8,
-    imgURL: "./assets/moshified.png",
+    imgURL: "./assets/moshified.webp",
     title: "Moshified",
     text: "Learnt about the AOS library that adds animation to the page as I scroll and the darken() function in SASS to add simple hover effects to elements.",
     category: "SASS",
@@ -82,7 +82,7 @@ export const card = [
   },
   {
     id: 9,
-    imgURL: "./assets/kaspr.png",
+    imgURL: "./assets/kaspr.webp",
     title: "Kasper",
     text: "This project challenged my vanilla CSS skills. Had fun building it shout-out to Elzero web school",
     category: "HTML & CSS",
@@ -91,7 +91,7 @@ export const card = [
   },
   {
     id: 1,
-    imgURL: "../assets/fylo.png",
+    imgURL: "../assets/fylo.webp",
     title: "Fylo",
     text: "Fun frontend mentor challenge, learnt how to toggle between dark and light mode using Tailwind.",
     category: "tailwind",
@@ -100,7 +100,7 @@ export const card = [
   },
   {
     id: 10,
-    imgURL: "./assets/easy-bank.png",
+    imgURL: "./assets/easy-bank.webp",
     title: "Easy Bank",
     text: "Another frontend mentor challenge, learnt how to build mobile burger menus.",
     category: "react & tailwind",
@@ -108,7 +108,7 @@ export const card = [
   },
   {
     id: 11,
-    imgURL: "./assets/loop-studios.png",
+    imgURL: "./assets/loop-studios.webp",
     title: "Loop Studios",
     text: "Learnt how to create interesting hover effects and animated the mobile menu toggler.",
     category: "Tailwind",
@@ -117,7 +117,7 @@ export const card = [
   },
   {
     id: 12,
-    imgURL: "./assets/manage.png",
+    imgURL: "./assets/manage.webp",
     title: "Manage",
     text: "Learnt how to add absolute positioned images to the background to add little bit of flavour to the site. This challenge is from frontend mentor.",
     category: "react & tailwind",
@@ -126,7 +126,7 @@ export const card = [
   },
   {
     id: 13,
-    imgURL: "./assets/bookmark.png",
+    imgURL: "./assets/bookmark.webp",
     title: "Bookmark",
     text: "Learnt how to create accordions with vanilla JS. Added some absolute positioned background images to add little bit of flavour to the site. This is a frontend mentor BTW.",
     category: "Tailwind",
@@ -135,7 +135,7 @@ export const card = [
   },
   {
     id: 14,
-    imgURL: "./assets/omnifood.png",
+    imgURL: "./assets/omnifood.webp",
     title: "Omnifood",
     text: "Learnt how to add some interesting hover effects to my mobile links. This is a capstone project from Jonase's HTML/CSS Udemy course.",
     category: "SASS",
@@ -144,7 +144,7 @@ export const card = [
   },
   {
     id: 15,
-    imgURL: "./assets/portfolio1.png",
+    imgURL: "./assets/portfolio1.webp",
     title: "Portfolio project",
     text: "Learnt how to add interesting hover effects in the work section and how to add typing effect to my hero section. This project is from Brad's HTML/CSS course.",
     category: "SASS",
@@ -153,7 +153,7 @@ export const card = [
   },
   {
     id: 16,
-    imgURL: "./assets/portflio2.png",
+    imgURL: "./assets/portflio2.webp",
     title: "Portfolio2",
     text: "The purpose of this project was to challenge my css skills. Learnt how to add some challenging hover effect to section names.",
     category: "HTML & CSS",
@@ -162,7 +162,7 @@ export const card = [
   },
   {
     id: 17,
-    imgURL: "./assets/vr.png",
+    imgURL: "./assets/vr.webp",
     title: "VR",
     text: "Learnt how to create video modals and how to add blurred backgrounds.",
     category: "react & tailwind",
@@ -171,7 +171,7 @@ export const card = [
   },
   {
     id: 18,
-    imgURL: "./assets/news-grid.png",
+    imgURL: "./assets/news-grid.webp",
     title: "News Grid",
     text: "Challenged my grid skills. This is from Brads's media HTML/CSS course.",
     category: "HTML & CSS",
@@ -180,7 +180,7 @@ export const card = [
   },
   {
     id: 19,
-    imgURL: "./assets/edge-ledger.png",
+    imgURL: "./assets/edge-ledger.webp",
     title: "Edge Ledger",
     text: "Learnt how to add favicon to my site and how to add image gallery with lightbox. This is from Brand's HTML/CSS coruse.",
     category: "HTML & CSS",
@@ -189,7 +189,7 @@ export const card = [
   },
   {
     id: 20,
-    imgURL: "./assets/secured.png",
+    imgURL: "./assets/secured.webp",
     title: "Secured",
     text: "Learnt how to implement react router dom v6 for the first time. shout-out to code commerce on youtube.",
     category: "react & tailwind",

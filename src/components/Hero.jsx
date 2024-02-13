@@ -1,5 +1,4 @@
-import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
@@ -24,7 +23,6 @@ const Hero = () => {
               loading="lazy"
               decoding="async"
               fetchpriority="high"
-              role="presentation"
             />
             <h1
               className="text-4xl dark:text-title"
