@@ -66,11 +66,14 @@ const Nav = () => {
                   : "fixed top-0 inset-0 bg-[#fdf2e9]  flex  justify-center items-center flex-col z-[999] gap-4 duration-300 translate-x-[-100%] dark:bg-[#111]"
               }
             >
-              <IoClose
-                className="absolute top-5 right-10 dark:text-white"
-                size={40}
-                onClick={() => setNav(!nav)}
-              />
+              <li className="absolute top-5 right-10">
+                <IoClose
+                  className=" dark:text-white"
+                  role="button"
+                  size={40}
+                  onClick={() => setNav(!nav)}
+                />
+              </li>
               <li className="item" data-text="About">
                 <a
                   href="#"
