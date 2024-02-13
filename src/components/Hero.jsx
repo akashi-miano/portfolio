@@ -21,6 +21,10 @@ const Hero = () => {
               src={avatar}
               alt="Avatar"
               className="w-[100px] h-[100px] rounded-full border-4 border-orange-500"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="high"
+              role="presentation"
             />
             <h1
               className="text-4xl dark:text-title"
