@@ -55,7 +55,11 @@ const Contact = () => {
       <div className="container">
         <header className="mb-6">
           <h2 className="flex items-center gap-4 text-3xl font-bold">
-            <SlEnvolope size={35} className="dark:text-subtitle" />
+            <SlEnvolope
+              size={35}
+              className="dark:text-subtitle"
+              aria-hidden="true"
+            />
             Contact Us
           </h2>
         </header>

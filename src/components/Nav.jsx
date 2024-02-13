@@ -26,7 +26,11 @@ const Nav = () => {
   };
   return (
     <>
-      <nav className="dark:bg-[#222] nav dark:text-white py-8 duration-300">
+      <nav
+        className="dark:bg-[#222] nav dark:text-white py-4 duration-300 sticky top-0 left-0 z-[999] shadow-lg bg-white"
+        role="navigation"
+        aria-label="navigation"
+      >
         <div className="container flex justify-between items-center">
           <ul className="items-center gap-4 hidden md:flex">
             <li>
@@ -40,8 +44,14 @@ const Nav = () => {
             </li>
           </ul>
           <div className="mobile-menu  md:hidden">
-            <button>
-              <GiHamburgerMenu size={35} onClick={() => setNav(!nav)} />
+            <button aria-label="mobile menu" role="button">
+              <GiHamburgerMenu
+                size={35}
+                onClick={() => setNav(!nav)}
+                tabIndex={"0"}
+                role="img"
+                alt="Hamburger menu icon for mobile menu"
+              />
             </button>
             <ul
               className={
@@ -93,8 +103,15 @@ const Nav = () => {
           <button
             className="flex justify-end dark:text-white rounded-full border border-orange-500 p-4 dark:bg-[#333]"
             onClick={changeTheme}
+            aria-label="Dark and light mode toggler"
+            role="button"
+            tabIndex={"0"}
           >
-            {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
+            {theme === "light" ? (
+              <FaSun size={20} role="img" alt={"Light Mode"} />
+            ) : (
+              <FaMoon size={20} role="img" alt="Dark Mode" />
+            )}
           </button>
         </div>
       </nav>

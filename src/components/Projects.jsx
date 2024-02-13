@@ -69,7 +69,7 @@ const Projects = () => {
                     <img
                       src={imgURL}
                       alt={`${title}'s project image`}
-                      className="w-full min-h-[200px]"
+                      className="w-full min-h-[200px] object-contain"
                     />
                   </div>
                   <div className="p-6 font-semibold text-wrapper flow-content--m">

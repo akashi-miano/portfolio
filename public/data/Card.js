@@ -56,7 +56,7 @@ export const card = [
   {
     id: 22,
     imgURL: "./assets/sunny-side.png",
-    title: "Sunnu Side",
+    title: "Sunny Side",
     text: "Interesting frontend mentor challenge, didn't learn much out of it. Did it for practice only.",
     category: "react & tailwind",
     link: "https://sunny-side-challenge-fem.netlify.app",

@@ -44,7 +44,17 @@ const Hero = () => {
                   <FaTwitter
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-cyan-500 dark:hover:text-white"
+                    role="img"
+                    aria-labelledby="twitter-title"
+                    aria-describedby="twitter-desc"
+                    alt="Twitter icon"
                   />
+                  <title id="twitter-title" className="sr-only">
+                    Twitter
+                  </title>
+                  <desc id="twitter-desc" className="sr-only">
+                    Takes you to my Twitter profile.
+                  </desc>
                 </a>
               </li>
               <li>
@@ -52,7 +62,17 @@ const Hero = () => {
                   <FaGithub
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-green-600 dark:hover:text-white"
+                    role="img"
+                    alt="Github icon"
+                    aria-labelledby="github-title"
+                    aria-describedby="github-desc"
                   />
+                  <title id="github-title" className="sr-only">
+                    Github
+                  </title>
+                  <desc id="github-desc" className="sr-only">
+                    Takes you to my Github profile.
+                  </desc>
                 </a>
               </li>
               <li>
@@ -63,7 +83,17 @@ const Hero = () => {
                   <SiFrontendmentor
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-red-500 dark:hover:text-white"
+                    role="img"
+                    alt="Frontend mentor icon"
+                    aria-labelledby="frotnendmentor-title"
+                    aria-describedby="frotnendmentor-desc"
                   />
+                  <title id="frotnendmentor-title" className="sr-only">
+                    Frontend mentor
+                  </title>
+                  <desc id="frotnendmentor-desc" className="sr-only">
+                    Takes you to my FroatnEnd mentor profile.
+                  </desc>
                 </a>
               </li>
               <li>
@@ -74,7 +104,17 @@ const Hero = () => {
                   <FaLinkedin
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-blue-700 dark:hover:text-white"
+                    role="img"
+                    alt="Takes you to my Linkedin profile."
+                    aria-labelledby="linkedin-title"
+                    aria-describedby="linkedin-desc"
                   />
+                  <title id="linkedin-title" className="sr-only">
+                    Linkedin
+                  </title>
+                  <desc id="linkedin-desc" className="sr-only">
+                    Takes you to my Linkedin profile.
+                  </desc>
                 </a>
               </li>
             </ul>
