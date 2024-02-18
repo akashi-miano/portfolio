@@ -11,7 +11,11 @@ const Hero = () => {
     <section className="py-16 dark:bg-[#333] hero duration-300">
       <div className="container">
         <div className="grid md:grid-cols-2">
-          <div className="text-section flow-content--m">
+          <div
+            className="text-section flow-content--m"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img
               src={avatar}
               alt="Avatar"
@@ -127,7 +131,11 @@ const Hero = () => {
               </li>
             </ul>
           </div>
-          <div className="img-wrapper">
+          <div
+            className="img-wrapper"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <Lottie animationData={developerAnimation} className="w-full" />
           </div>
         </div>
