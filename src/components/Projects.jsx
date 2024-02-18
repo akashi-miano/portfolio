@@ -22,11 +22,7 @@ const Projects = () => {
     >
       <div className="container !max-w-[1550px]">
         <div className="">
-          <div
-            className="flex flex-col md:flex-row flex-wrap gap-4 filter-items  justify-center mb-12"
-            data-aos="fade-right"
-            data-aos-delay="400"
-          >
+          <div className="flex flex-col md:flex-row flex-wrap gap-4 filter-items  justify-center mb-12">
             {filterOptions.map(({ id, category }) => (
               <button
                 key={id}
@@ -50,11 +46,7 @@ const Projects = () => {
             ))}
           </div>
           <div className="cards">
-            <div
-              className="grid gap-8 cards-wrapper card md:grid-cols-2 xl:grid-cols-3"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="grid gap-8 cards-wrapper card md:grid-cols-2 xl:grid-cols-3">
               {arr.map(({ id, title, text, imgURL, link, repo }) => (
                 <motion.div
                   key={id}
