@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <section className="py-28 dark:bg-[#333] dark:text-white" id="contact">
       <div className="container">
-        <header className="mb-6">
+        <header className="mb-6" data-aos="zoom-in" data-aos-delay="400">
           <h2 className="flex items-center gap-4 text-3xl font-bold">
             <SlEnvolope
               size={35}
@@ -68,7 +68,11 @@ const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           ref={form}
         >
-          <div className="inputs-wrapper flow-content--m">
+          <div
+            className="inputs-wrapper flow-content--m"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <div className="input-wrapper">
               <label
                 htmlFor="name"
@@ -160,7 +164,11 @@ const Contact = () => {
               </div>
             )}
           </div>
-          <div className="img-wrapper order-[-1] md:order-[0]">
+          <div
+            className="img-wrapper order-[-1] md:order-[0]"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
             <Lottie animationData={envelopeAnimation} className="w-full" />
           </div>
         </form>

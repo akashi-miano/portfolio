@@ -24,7 +24,7 @@ const Projects = () => {
         <div className="">
           <div
             className="flex flex-col md:flex-row flex-wrap gap-4 filter-items  justify-center mb-12"
-            data-aos="fade-right"
+            data-aos="zoom-in"
             data-aos-delay="400"
           >
             {filterOptions.map(({ id, category }) => (
@@ -52,8 +52,8 @@ const Projects = () => {
           <div className="cards">
             <div
               className="grid gap-8 cards-wrapper card md:grid-cols-2 xl:grid-cols-3"
-              data-aos="fade-left"
-              data-aos-delay="200"
+              data-aos="fade-right"
+              data-aos-delay="600"
             >
               {arr.map(({ id, title, text, imgURL, link, repo }) => (
                 <motion.div
