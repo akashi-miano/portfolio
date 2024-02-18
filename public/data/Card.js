@@ -10,7 +10,7 @@ export const card = [
   },
   {
     id: 3,
-    imgURL: "./assets/countries-rest-api.webp",
+    imgURL: "./assets/countries.webp",
     title: "Countries API",
     text: "Learn how to pass parameters to the url with react router dom and how to filter countries by region.",
     category: "react & tailwind",
@@ -37,7 +37,7 @@ export const card = [
   },
   {
     id: 5,
-    imgURL: "./assets/foodie-zone.webp",
+    imgURL: "./assets/foodie.webp",
     title: "Foodie Zone",
     text: "Learnt how to use Swiper.js to create the testimonial section and how to loop through all testimonials.",
     category: "react & tailwind",
@@ -64,7 +64,7 @@ export const card = [
   },
   {
     id: 7,
-    imgURL: "./assets/space-explorer.webp",
+    imgURL: "./assets/explorer.webp",
     title: "Space Explorer",
     text: "Learnt how to implement react router dom to create multiple routes and practiced using th useState() hook to add little bit of interactivity.",
     category: "react & tailwind",
@@ -82,7 +82,7 @@ export const card = [
   },
   {
     id: 9,
-    imgURL: "./assets/kaspr.webp",
+    imgURL: "./assets/kasper.webp",
     title: "Kasper",
     text: "This project challenged my vanilla CSS skills. Had fun building it shout-out to Elzero web school",
     category: "HTML & CSS",
@@ -153,7 +153,7 @@ export const card = [
   },
   {
     id: 16,
-    imgURL: "./assets/portflio2.webp",
+    imgURL: "./assets/portfolio2.webp",
     title: "Portfolio2",
     text: "The purpose of this project was to challenge my css skills. Learnt how to add some challenging hover effect to section names.",
     category: "HTML & CSS",

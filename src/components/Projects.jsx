@@ -20,10 +20,10 @@ const Projects = () => {
       className="projects min-h-screen dark:bg-[#222] duration-300 py-28"
       id="projects"
     >
-      <div className="container">
-        <div className="grid--1x2">
+      <div className="container !max-w-[1550px]">
+        <div className="">
           <div
-            className="flex flex-col gap-4 filter-items w-fit"
+            className="flex flex-col md:flex-row flex-wrap gap-4 filter-items  justify-center mb-12"
             data-aos="fade-right"
             data-aos-delay="400"
           >
@@ -51,14 +51,14 @@ const Projects = () => {
           </div>
           <div className="cards">
             <div
-              className="grid gap-8 cards-wrapper card md:grid-cols-3"
+              className="grid gap-8 cards-wrapper card md:grid-cols-2 xl:grid-cols-3"
               data-aos="fade-left"
               data-aos-delay="200"
             >
               {arr.map(({ id, title, text, imgURL, link, repo }) => (
                 <motion.div
                   key={id}
-                  className="rounded-md card dark:bg-[#333] dark:text-white duration-300 hover:rotate-3 hover:!scale-105 hover:cursor-pointer dark:border-2 dark:border-gray-600 dark:hover:border-cyan-500"
+                  className="rounded-md card dark:bg-[#333] dark:text-white duration-300 hover:rotate-3 hover:!scale-[1.05] hover:cursor-pointer dark:border-2 dark:border-gray-600 dark:hover:border-cyan-500 hover:z-[1]"
                   layout
                   initial={{ transform: "scale(0)" }}
                   animate={{ transform: "scale(1)" }}
@@ -66,15 +66,15 @@ const Projects = () => {
                   transition={{ type: "spring", damping: 8 }}
                 >
                   <div className="img-wrapper">
-                    <img
-                      src={imgURL}
-                      alt={`${title}'s project image`}
-                      className="w-full min-h-[200px] object-contain"
+                    <div
+                      role="img"
+                      aria-label={`${title}'s project image`}
+                      className={`w-full min-h-[250px] md:min-h-[250px] bg-center bg-cover bg-no-repeat`}
+                      style={{ backgroundImage: `url(${imgURL})` }}
                       loading="lazy"
                       decoding="async"
                       fetchpriority="high"
-                      srcSet={`${imgURL} 300w`}
-                    />
+                    ></div>
                   </div>
                   <div className="p-6 font-semibold text-wrapper flow-content--m">
                     <h2 className="text-2xl">{title}</h2>

@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import Lottie from "lottie-react";
-import avatar from "../../public/assets/image.jpg";
+import avatar from "../../public/assets/image.webp";
 import developerAnimation from "../../public/animation/developerAnimation.json";
 
 const Hero = () => {
