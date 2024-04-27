@@ -25,7 +25,7 @@ const Hero = () => {
               fetchpriority="high"
             />
             <h1
-              className="text-4xl dark:text-title"
+              className="text-4xl dark:text-title overflow-hidden"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 2 }}
