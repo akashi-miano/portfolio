@@ -116,7 +116,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="inline-block mb-2 dark:text-subtitle"
               >
-                Email Address
+                Message
               </label>
               <textarea
                 id="message"
