@@ -60,7 +60,7 @@ const Contact = () => {
               className="dark:text-subtitle"
               aria-hidden="true"
             />
-            Contact Us
+            Contact Me
           </h2>
         </header>
         <form
