@@ -5,6 +5,7 @@ import { SiFrontendmentor } from "react-icons/si";
 import Lottie from "lottie-react";
 import avatar from "../../public/assets/avatar.jpg";
 import developerAnimation from "../../public/animation/developerAnimation.json";
+import { FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -109,7 +110,7 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/abdisalam-hussein-a704b3274/"
+                  href="https://www.linkedin.com/in/abdisalam-hussein-64a5201b7/"
                   target="_blank"
                   aria-label="Linkedin"
                 >
@@ -126,6 +127,28 @@ const Hero = () => {
                   </title>
                   <desc id="linkedin-desc" className="sr-only">
                     Takes you to my Linkedin profile.
+                  </desc>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/gtg_x/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram
+                    size={30}
+                    className="duration-300 dark:text-subtitle hover:text-pink-700 dark:hover:text-white"
+                    role="img"
+                    alt="Takes you to my Instagram profile."
+                    aria-labelledby="instagram-title"
+                    aria-describedby="instagram-desc"
+                  />
+                  <title id="instagram-title" className="sr-only">
+                    Instagram
+                  </title>
+                  <desc id="instagram-desc" className="sr-only">
+                    Takes you to my Instagram profile.
                   </desc>
                 </a>
               </li>

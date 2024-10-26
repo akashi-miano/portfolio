@@ -20,7 +20,7 @@ const Projects = () => {
       className="projects min-h-screen dark:bg-[#222] duration-300 py-28"
       id="projects"
     >
-      <div className="container !max-w-[1550px]">
+      <div className="container">
         <div className="">
           <div
             className="flex flex-col md:flex-row flex-wrap gap-4 filter-items  justify-center mb-12"
@@ -58,7 +58,7 @@ const Projects = () => {
               {arr.map(({ id, title, text, imgURL, link, repo }) => (
                 <motion.div
                   key={id}
-                  className="rounded-md card dark:bg-[#333] dark:text-white duration-300 hover:rotate-3 hover:!scale-[1.05] hover:cursor-pointer dark:border-2 dark:border-gray-600 dark:hover:border-cyan-500 hover:z-[1]"
+                  className="rounded-md card dark:bg-[#333] dark:text-white duration-300 hover:rotate-3 hover:cursor-pointer dark:border-2 dark:border-gray-600 dark:hover:border-cyan-500 hover:z-[1]"
                   layout
                   initial={{ transform: "scale(0)" }}
                   animate={{ transform: "scale(1)" }}
