@@ -1,11 +1,9 @@
-import { FaTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import Lottie from "lottie-react";
 import avatar from "../../public/assets/avatar.jpg";
 import developerAnimation from "../../public/animation/developerAnimation.json";
-import { FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -32,7 +30,7 @@ const Hero = () => {
               transition={{ duration: 2 }}
             >
               Front-End Dev | CSS Wizard 🧙‍♂️ | React.js | Next.js | Linux God |
-              2nd year student @MMU | VIM user BTW
+              Final year student @MMU | VIM user BTW
             </h1>
             <p className="dark:text-subtitle text-md max-w-[550px]">
               My journey in web development has been marked by a commitment to
@@ -42,28 +40,6 @@ const Hero = () => {
               visually stunning websites.
             </p>
             <ul className="flex items-center gap-4 socials">
-              <li>
-                <a
-                  href="https://twitter.com/TrollerHD1"
-                  target="_blank"
-                  aria-label="Twitter"
-                >
-                  <FaTwitter
-                    size={30}
-                    className="duration-300 dark:text-subtitle hover:text-cyan-500 dark:hover:text-white"
-                    role="img"
-                    aria-labelledby="twitter-title"
-                    aria-describedby="twitter-desc"
-                    alt="Twitter icon"
-                  />
-                  <title id="twitter-title" className="sr-only">
-                    Twitter
-                  </title>
-                  <desc id="twitter-desc" className="sr-only">
-                    Takes you to my Twitter profile.
-                  </desc>
-                </a>
-              </li>
               <li>
                 <a
                   href="https://github.com/akashi-miano"
@@ -127,28 +103,6 @@ const Hero = () => {
                   </title>
                   <desc id="linkedin-desc" className="sr-only">
                     Takes you to my Linkedin profile.
-                  </desc>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/gtg_x/"
-                  target="_blank"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram
-                    size={30}
-                    className="duration-300 dark:text-subtitle hover:text-pink-700 dark:hover:text-white"
-                    role="img"
-                    alt="Takes you to my Instagram profile."
-                    aria-labelledby="instagram-title"
-                    aria-describedby="instagram-desc"
-                  />
-                  <title id="instagram-title" className="sr-only">
-                    Instagram
-                  </title>
-                  <desc id="instagram-desc" className="sr-only">
-                    Takes you to my Instagram profile.
                   </desc>
                 </a>
               </li>
