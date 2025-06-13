@@ -1,6 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { GrDocumentPdf } from "react-icons/gr";
 import { SiFrontendmentor } from "react-icons/si";
+import resume from "../../public/assets/FrontEnd_Resume.pdf";
 import Lottie from "lottie-react";
 import avatar from "../../public/assets/avatar.jpg";
 import developerAnimation from "../../public/animation/developerAnimation.json";
@@ -91,6 +93,24 @@ const Hero = () => {
                   aria-label="Linkedin"
                 >
                   <FaLinkedin
+                    size={30}
+                    className="duration-300 dark:text-subtitle hover:text-blue-700 dark:hover:text-white"
+                    role="img"
+                    alt="Takes you to my Linkedin profile."
+                    aria-labelledby="linkedin-title"
+                    aria-describedby="linkedin-desc"
+                  />
+                  <title id="linkedin-title" className="sr-only">
+                    Linkedin
+                  </title>
+                  <desc id="linkedin-desc" className="sr-only">
+                    Takes you to my Linkedin profile.
+                  </desc>
+                </a>
+              </li>
+              <li>
+                <a href={resume} target="_blank" aria-label="Resume">
+                  <GrDocumentPdf
                     size={30}
                     className="duration-300 dark:text-subtitle hover:text-blue-700 dark:hover:text-white"
                     role="img"
